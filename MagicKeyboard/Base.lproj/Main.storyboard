@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kaz-RE-Ev0">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4kg-pi-FtQ">
+            <objects>
+                <viewController id="kaz-RE-Ev0" customClass="ViewController" customModule="MagicKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V8F-h3-4Mt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1122.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nP-Wc-5h2" customClass="KeyboardScrollView" customModule="MagicKeyboard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="1102.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6E-gX-h0N">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1102.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UX-IN-Yk5">
+                                                <rect key="frame" x="20" y="20" width="280" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEr-Bm-DMW">
+                                                <rect key="frame" x="20" y="60" width="280" height="812.5"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</mutableString>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpd-4k-R1W">
+                                                <rect key="frame" x="20" y="942.5" width="280" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5x-N7-XBF">
+                                                <rect key="frame" x="20" y="992.5" width="280" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOc-DK-vRZ">
+                                                <rect key="frame" x="20" y="892.5" width="280" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYa-Pc-dyN">
+                                                <rect key="frame" x="20" y="1042.5" width="280" height="40"/>
+                                                <color key="backgroundColor" red="0.26839057100000002" green="0.42452203370000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="QWa-dt-ga3"/>
+                                                </constraints>
+                                                <state key="normal" title="Send">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onDidTapButton:" destination="kaz-RE-Ev0" eventType="touchUpInside" id="903-pq-B8u"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="h5x-N7-XBF" firstAttribute="top" secondItem="rpd-4k-R1W" secondAttribute="bottom" constant="20" id="05k-Fy-vEe"/>
+                                            <constraint firstItem="fYa-Pc-dyN" firstAttribute="leading" secondItem="e6E-gX-h0N" secondAttribute="leading" constant="20" id="0gF-71-3Yt"/>
+                                            <constraint firstItem="HEr-Bm-DMW" firstAttribute="top" secondItem="0UX-IN-Yk5" secondAttribute="bottom" constant="20" id="45z-4c-hxg"/>
+                                            <constraint firstAttribute="trailing" secondItem="0UX-IN-Yk5" secondAttribute="trailing" constant="20" id="9F1-t7-0ii"/>
+                                            <constraint firstItem="0UX-IN-Yk5" firstAttribute="leading" secondItem="e6E-gX-h0N" secondAttribute="leading" constant="20" id="D58-Sa-umO"/>
+                                            <constraint firstItem="h5x-N7-XBF" firstAttribute="leading" secondItem="e6E-gX-h0N" secondAttribute="leading" constant="20" id="I4G-Q7-A8J"/>
+                                            <constraint firstAttribute="trailing" secondItem="fYa-Pc-dyN" secondAttribute="trailing" constant="20" id="K3P-eb-MPm"/>
+                                            <constraint firstItem="fYa-Pc-dyN" firstAttribute="top" secondItem="h5x-N7-XBF" secondAttribute="bottom" constant="20" id="MIu-zU-fQw"/>
+                                            <constraint firstAttribute="trailing" secondItem="h5x-N7-XBF" secondAttribute="trailing" constant="20" id="QU2-k3-foB"/>
+                                            <constraint firstItem="HEr-Bm-DMW" firstAttribute="leading" secondItem="e6E-gX-h0N" secondAttribute="leading" constant="20" id="RJM-X0-24S"/>
+                                            <constraint firstAttribute="bottom" secondItem="fYa-Pc-dyN" secondAttribute="bottom" constant="20" id="TyA-9e-aJl"/>
+                                            <constraint firstItem="rpd-4k-R1W" firstAttribute="top" secondItem="TOc-DK-vRZ" secondAttribute="bottom" constant="20" id="Vlc-1q-NZH"/>
+                                            <constraint firstAttribute="trailing" secondItem="TOc-DK-vRZ" secondAttribute="trailing" constant="20" id="WJV-qS-BPd"/>
+                                            <constraint firstAttribute="trailing" secondItem="HEr-Bm-DMW" secondAttribute="trailing" constant="20" id="ddG-Et-O14"/>
+                                            <constraint firstItem="TOc-DK-vRZ" firstAttribute="leading" secondItem="e6E-gX-h0N" secondAttribute="leading" constant="20" id="jL9-qi-bQu"/>
+                                            <constraint firstItem="rpd-4k-R1W" firstAttribute="leading" secondItem="e6E-gX-h0N" secondAttribute="leading" constant="20" id="kax-E1-edM"/>
+                                            <constraint firstAttribute="trailing" secondItem="rpd-4k-R1W" secondAttribute="trailing" constant="20" id="knt-OK-IMK"/>
+                                            <constraint firstItem="TOc-DK-vRZ" firstAttribute="top" secondItem="HEr-Bm-DMW" secondAttribute="bottom" constant="20" id="pt3-C4-65q"/>
+                                            <constraint firstItem="0UX-IN-Yk5" firstAttribute="top" secondItem="e6E-gX-h0N" secondAttribute="top" constant="20" id="u5y-M9-QGf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="e6E-gX-h0N" firstAttribute="top" secondItem="8nP-Wc-5h2" secondAttribute="top" id="4Bq-eB-gHa"/>
+                                    <constraint firstAttribute="bottom" secondItem="e6E-gX-h0N" secondAttribute="bottom" id="VEZ-hf-5m1"/>
+                                    <constraint firstItem="e6E-gX-h0N" firstAttribute="leading" secondItem="8nP-Wc-5h2" secondAttribute="leading" id="nta-gG-Bys"/>
+                                    <constraint firstAttribute="trailing" secondItem="e6E-gX-h0N" secondAttribute="trailing" id="ydN-kq-Ow6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="extraBottomSpace">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xsy-Zo-5rQ" firstAttribute="trailing" secondItem="8nP-Wc-5h2" secondAttribute="trailing" id="7rn-ma-D7b"/>
+                            <constraint firstItem="e6E-gX-h0N" firstAttribute="width" secondItem="V8F-h3-4Mt" secondAttribute="width" id="T0V-L2-MVQ"/>
+                            <constraint firstItem="8nP-Wc-5h2" firstAttribute="leading" secondItem="Xsy-Zo-5rQ" secondAttribute="leading" id="bLe-Lo-qrU"/>
+                            <constraint firstItem="Xsy-Zo-5rQ" firstAttribute="bottom" secondItem="8nP-Wc-5h2" secondAttribute="bottom" id="fBr-ku-CzN"/>
+                            <constraint firstItem="8nP-Wc-5h2" firstAttribute="top" secondItem="Xsy-Zo-5rQ" secondAttribute="top" id="qNd-GN-Uey"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xsy-Zo-5rQ"/>
+                    </view>
+                    <size key="freeformSize" width="320" height="1122.5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWC-bB-3Ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1.875" y="-51.760563380281688"/>
+        </scene>
+    </scenes>
+</document>
